@@ -1,0 +1,113 @@
+body 
+{
+background-color: white ; 
+font-family: Arial, Helvetica, sans-serif; 
+}
+
+#entete /* comprend la première ligne (Gmail + image + app + connexion) */ 
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+
+.item /* (Gmail + image + app) */
+{
+    font-size: 13px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.log /* bouton connexion */
+{
+    font-size: 13px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 20px;
+
+    border: 1px solid #4285f4;
+    background-color: #4285f4;   
+}
+
+#centre /* comprend les div haut (logo + barre de recherche) & bas (boutons "Recherche Google + "J'ai de la chance") */
+{
+    display: flex;
+    flex-flow: wrap column; 
+    justify-content: center; 
+    align-items: center;
+    height: 500px;
+    margin: 120px;
+}
+
+.logo /* logo google */
+{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.barre /* barre de recherche */
+{
+    border: 1px solid grey;
+    width : 580px;
+    height: 40px;
+    border-radius: 20px; /* permet d'arrondir les angles */
+    margin-bottom: 20px;
+}
+
+#bas /* Comprend les boutons "Recherche Google" + "J'ai de la chance" */
+{
+    display: flex;
+    justify-content: space-around;  /* permet d'espacer les deux boutons en les répartissant dans l'ensemble de l'espace disponible soit la largeur de 50%*/
+    width: 50% ;
+}
+
+.recherche /* bouton "Recherche Google"*/
+{
+    background-color: #D8D8D8 ;
+    color: #444444;
+    font-size :14px;
+}
+
+.chance /* bouton "J'ai de la chance" */
+{
+    background-color: #D8D8D8 ;
+    color: #444444;
+    font-size: 14px;
+}
+
+#footer /* ensemble du footer - permet notamment de disposer les deux lignes en colonne */
+{
+    display: flex;
+    flex-flow: column wrap ;
+    height: 50px;
+
+}
+
+#footer1 /* première ligne footer "France" */
+{
+    font-size: 15px;
+    color: #444444;
+    background-color: #D8D8D8; 
+    border: 0.5px solid #ADADAD;  
+}
+
+#footer2 /* deuxième ligne footer  */
+{
+    font-size: 13px;
+    color: #444444;
+    background-color: #D8D8D8; 
+    border: 0.5px solid #ADADAD;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.espace /*  espace centrale de la deuxième ligne du footer */
+{
+display: flex;
+flex-grow: 0.60; 
+}
